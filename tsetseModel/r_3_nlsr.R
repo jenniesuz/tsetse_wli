@@ -1,7 +1,11 @@
+#***********This script fits the tsetse population dynamics model to the observed decline in
+# the tsetse population across the wildlife-livestock interface to estimate increased mortality
+# in farming areas#########################
+
+
 library(minpack.lm)
 library(ggplot2)
 library(gridExtra)
-library(beepr)
 library(plyr)
 
 source("r_1_model.R")
@@ -53,7 +57,7 @@ fit <- function(par,dat=data){
 
     sim.res <- tsetse_run_mod(tsetse_params(mo.val=a
                                             ,md.p=b
-                                            ,l=(1/12)/4# l=1/12
+                                            ,l=(1/12)/4
                                             ,alph=(0.25*2)/4
                                             ))
     out <- output_func(sim.res)
@@ -74,18 +78,16 @@ fit <- function(par,dat=data){
 #********************************************************************
 #************************read in data******************************
 data <- read.csv("tsetseCounts.csv")
-data <- newdat[!newdat$dist < -5000,]
 
 #********starting parameters***********
 params <- c(0.1/4,0.0002/4)
 #********Fit*******************
 
-fm <- nls.lm(par=params,fn=fit,lower=c(0.05/4,.000001/4),upper=c(0.9/4,0.001/4),control = nls.lm.control(maxfev = integer(), 
-#**********************************************************                                                                                         maxiter = 50, nprint=100))
+fm <- nls.lm(par=params,fn=fit,lower=c(0.05/4,.000001/4),upper=c(0.9/4,0.001/4),control = nls.lm.control(maxfev = integer(),  maxiter = 50, nprint=100))
 
 summary(fm)
 coef(fm)  
 
-beep()
+
 
 
