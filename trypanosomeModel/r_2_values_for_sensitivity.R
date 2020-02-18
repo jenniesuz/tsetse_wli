@@ -1,14 +1,14 @@
 library(lhs)
 library(spartan)
-require("lattice")
-require("MASS")
-require("sensitivity")
+library(lattice)
+library(MASS)
+library(sensitivity)
 library(parallel)
 library(gridExtra)
 library(grid)
 library(plyr)
 library(scales)
-library(xlsx)
+
 
 #************Set ranges for parameter values**************
 # trypanosome parameters

@@ -1,4 +1,4 @@
-require("sensitivity")
+library(sensitivity)
 library(parallel)
 library(gridExtra)
 library(grid)
@@ -28,7 +28,7 @@ trypspop <- parRapply(cl,randSnd,function(x){
   sim.res <- tsetse_run_mod(tsetse_params(md.p=0.00000478
                                           ,mu.a.b=0.03
                                           ,alph=0.5
-                                          ,mo.val=0#0.152
+                                          ,mo.val=0
                                           ,b=x[8]
                                           ,pvit=x[1]
                                           ,pvig=x[2]
