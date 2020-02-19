@@ -1,7 +1,5 @@
-Tsetse and trypansomiasis control at the wildlife-livestock interface
-=================
 
-# <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">tsetse wildlife-livestock interface code repository</span>
+# <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Tsetse & trypanosomiasis control at the wildlife-livestock interface code repository</span>
 
 This repository contains all files needed to run the analyses in:
 
