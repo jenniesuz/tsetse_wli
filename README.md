@@ -1,4 +1,4 @@
-mosquito-Rajshahi
+Tsetse and trypansomiasis control at the wildlife-livestock interface
 =================
 
 # <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">tsetse wildlife-livestock interface code repository</span>
