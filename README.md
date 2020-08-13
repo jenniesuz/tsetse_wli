@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-tsetse_wli
-=================
-=======
->>>>>>> 52f63266e0c818f217c453519e8bc0d652099bee
 
 # <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Tsetse & trypanosomiasis control at the wildlife-livestock interface code repository</span>
 
