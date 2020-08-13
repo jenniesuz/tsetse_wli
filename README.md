@@ -20,7 +20,7 @@ For the tsetse model, we suggest you open [this project file](https://github.com
 - [**r_2_sensitivity_plots.R**](r_2_sensitivity_plots.R)
 - [**r_3_nlsr.R**](r_3_nlsr.R)
 
-For the trypanosome model, we suggest you open [this project file](https://github.com/jenniesuz/tsetse_wli/blob/master/trypanosomeModel/trypanosomeModel.Rproj) file and view the fiels in the following order:
+For the trypanosome model, we suggest you open [this project file](https://github.com/jenniesuz/tsetse_wli/blob/master/trypanosomeModel/trypanosomeModel.Rproj) file and view the files in the following order:
 - [**r_1_model.R**](r_1_model.R)
 - [**r_1_params.R**](r_1_params.R)
 - [**r_2_values_for_sensitivity.R**](r_2_values_for_sensitivity.R)
