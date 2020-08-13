@@ -1,4 +1,4 @@
-mosquito-Rajshahi
+tsetse_wli
 =================
 
 # <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">tsetse wildlife-livestock interface code repository</span>
@@ -13,7 +13,7 @@ The code is made available under a <a rel="license" href="http://creativecommons
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />
 
-There are two folders in this repository. One contains the tsetse population dynamics model and the other contains the trypanosome transmission model.
+There are three folders in this repository. One contains the tsetse data to plot Fig. 1 in the manuscript, the second contains the population dynamics model and the third contains the trypanosome transmission model.
 
 For the tsetse model, we suggest you open [this project file](https://github.com/jenniesuz/tsetse_wli/blob/master/tsetseModel/tsetseModel.Rproj) file in [R Studio](rstudio.org) and view the files in the following order:
 - [**r_1_model.R**](r_1_model.R)
@@ -30,22 +30,3 @@ For the trypanosome model, we suggest you open [this project file](https://githu
 - [**r_2_sensitivity_subset.R**](r_2_sensitivity_subset.R)
 - [**r_2_sensitivity_subset_plot.R**](r_2_sensitivity_subset_plot.R)
 
-These files plus the required data are explained briefly below:
-
-## Data
-- **tsetseCounts.csv** -
-
-## Tsetse population dynamics model
-- **r_1_model.R** - 
-- **r_1_params.R** - 
-- **r_2_sensitivity.R** - 
-- **r_2_sensitivity_plots.R** - 
-- **r_3_nlsr.R** - 
-
-## Trypanosome transmission model
-- **r_1_model.R** - 
-- **r_1_params.R** - 
-- **r_2_values_for_sensitivity.R** - 
-- **r_2_sensitivity.R** - 
-- **r_2_sensitivity_subset.R** - 
-- **r_2_sensitivity_subset_plot.R** - 
