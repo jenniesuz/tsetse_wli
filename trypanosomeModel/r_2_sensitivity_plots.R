@@ -1,5 +1,6 @@
 library(sensitivity)
 library(ggplot2)
+library(reshape)
 
 inputs <- read.csv("LHSParms.csv")
 output <- read.csv("trypanosomeSensitivityResults.csv")
@@ -46,7 +47,7 @@ dat$variable2 <- factor(dat$variable
 tiff("FigS5.1_sensitivity.tiff", height = 4, width = 5, units = 'in', compression="lzw", res=400)
 ggplot(dat,aes(value,perc.host))+
   geom_point(size=0.01,col="black",alpha=0.2)  +
-  labs( y= "Relative tsetse density (%)"
+  labs( y= "Host prevalence"
         , x="Parameter value") +
   theme_set(theme_bw())  +
   theme(panel.border = element_blank()
@@ -67,7 +68,7 @@ dev.off()
 tiff("FigS5.2_sensitivity.tiff", height = 4, width = 5, units = 'in', compression="lzw", res=400)
 ggplot(dat,aes(value,perc.vector))+
   geom_point(size=0.01,col="black",alpha=0.2)  +
-  labs( y= "Relative tsetse density (%)"
+  labs( y= "Vector prevalence"
         , x="Parameter value") +
   theme_set(theme_bw())  +
   theme(panel.border = element_blank()

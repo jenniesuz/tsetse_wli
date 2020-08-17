@@ -31,12 +31,12 @@ ggplot(dat, aes(x=trap.dist,y=men_cnt,col=qtr)) +
   theme_set(theme_bw())  +
   theme(panel.border = element_blank()
         ,axis.line = element_line(color = 'black')
-        ,text=element_text(size=8)
+        ,text=element_text(size=9)
         ,plot.margin=unit(c(0.2,0.1,0.1,0.1), "cm")
         ,axis.text=element_text(size=6.5)
         ,legend.key.size = unit(0.4,"line")
         ,legend.background = element_blank()
-        ,legend.text=element_text(size=7)
+        ,legend.text=element_text(size=7.5)
         ,legend.position =c(0.93,0.33)
         ,strip.background = element_rect(fill="white",color="white")
         ,legend.title = element_blank()) +
